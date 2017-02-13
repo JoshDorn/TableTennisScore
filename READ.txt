@@ -1,0 +1,11 @@
+Table Tennis Score Tracker
+Written by Joshua Dorn
+
+This code was thrown together and is definitely not perfect.
+
+Hoping to use at local Table Tennis Club.
+
+If you plan on changing/viewing any code, DO NOT OPEN the jquery.js file.
+This file was created solely for the framing of the running window.
+
+If you are just using the application, just open Index.html through Firefox.

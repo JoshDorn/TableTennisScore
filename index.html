@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Table Tennis</title>
+    <meta charset="utf-8">
+    <script src="jquery.js"></script>
+    <script src="TTScore.js"></script>
+    <link type="text/css" rel="stylesheet" href="TTScore.css">
+  </head>
+<body>
+
+<div id="TTScore">
+
+    <div id="time-container">
+        <span data-ui="time">00:00</span>
+    </div>
+
+    <div id="player-left-container">
+        <div class="ready" style="display:none;"></div>
+        <div class="winner" style="display:none;"><span>WINNER</span></div>
+        <div class="name" data-ui="player-left-name">Player A</div>
+        <div class="score" data-ui="player-left-score">0</div>
+    </div>
+
+    <div id="player-right-container">
+        <div class="ready" style="display:none;"></div>
+        <div class="winner" style="display:none;"><span>WINNER</span></div>
+        <div class="name" data-ui="player-right-name">Player B</div>
+        <div class="score" data-ui="player-right-score">0</div>
+    </div>
+
+    <div id="service" data-ui="service">SERVICE</div>
+
+    <div id="ready" style="display: none;"><span>Press both buttons to begin game.</span></div>
+
+</div>
+
+  <script>
+    $(document).ready(function () {
+      $('#TTScore').pingPong();
+    });
+  </script>
+
+</body>
+</html>
